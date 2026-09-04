@@ -1,0 +1,25 @@
+{
+  "name": "sql-terminal-agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": { 
+    "read-logs": "node scripts/read_logs.js",
+    "faker": "node scripts/logs_faker.js",
+    "test": "node --test tests/consulta.test.js",
+    "start": "node --watch --env-file=.env src/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@faker-js/faker": "^10.6.0"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^4.0.63",
+    "@ai-sdk/openai": "^4.0.58",
+    "ai": "^7.0.92",
+    "zod": "^4.5.4"
+  }
+}
